@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = [0,1,2,3,4,5];
+    let b = [0,1,2,3,3,5];
+    if (checkLength()) {
+        checkIndex();
+    }
+
+    function checkLength() {
+        let check;
+        if (a.length == b.length) {
+            check = true;
+        }
+        else check = false;
+        return check;
+    }
+
+    function checkIndex () {
+        let check = true;
+        for (i = 0; i < a.length; i++) {
+            if (a[i] !== b[i]) {
+                check = false;
+                break
+            }
+        }
+        if (check) {
+            alert("2 chuỗi giống nhau");
+        }
+        else alert("2 chuỗi khác nhau");
+    }
+</script>
+</html>

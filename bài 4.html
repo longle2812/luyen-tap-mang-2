@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = ['c',1,2,'d',0,8];
+    let count = 0;
+    for (let i = 0; i < a.length; i++) {
+        let check = typeof a[i];
+        if (check == "string") {
+            count ++;
+        }
+    }
+    document.write(count);
+</script>
+</html>
